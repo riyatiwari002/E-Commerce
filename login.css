@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    /* background-image: url(./images3/bg.jpg);
+    width:100%;
+    height:600px; */
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+   
+    
+}
+.navbar .navbar-art1 .logo img{
+    width:100px;
+    
+    
+}
+
+
+.navbar .navbar-art2 ul{
+    list-style: none;
+    display: flex;
+    /* color:white; */
+
+   
+    
+}
+
+.navbar .navbar-art2 ul li a{
+ 
+    /* border: 2px solid red; */
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+   
+    
+}
+
+.navbar .navbar-art3{
+    display:flex;
+    /* border: 2px solid red; */
+     
+   
+}
+.navbar .navbar-art3 div{
+    /* border: 2px solid red */
+    padding: 15px;
+}
+
+.navbar-art3 div select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.navbar .navbar-art3 div i{
+    font-size: 20px;
+    color:black;
+}
+
+
+/* login page my account section start */
+.my-account{
+    width: 100%px;
+    height:200px;
+    background-color:rgba(128, 128, 128,0.1);
+    /* margin-top:0px; */
+    text-align:center;
+    font-weight: 400;
+    font-size: 40px;
+    /* border: 2px solid red; */
+ 
+}
+.my-account .my-account-art1
+{
+   /* margin-top: 10px; */
+   position: absolute;
+   left:600px;
+   top: 150px;
+
+}
+
+/* .login{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid red;
+    margin-top:50px;
+    flex-direction: column;
+}
+sup{
+    color:red;
+}
+.login .login-art1 div
+{
+   flex-direction: column;
+} */
+
+.login {
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 50px;
+}
+
+.login-art1 {
+  width: 400px;
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+
+  background-color: #fff;
+  /* margin-top: 500px; */
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  /* margin-bottom: 8px; */
+}
+
+sup {
+  color: red;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+ 
+}
+
+.form-options label {
+  font-weight: normal;
+  
+}
+.form-options a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn {
+  width: 100%;
+  background-color: #232323;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  /* border: 2px solid red; */
+  padding: 15px;
+  margin-top: 10px; /*add spacing from above */
+}
+
+
+.btn:hover {
+  background-color: #000;
+}
+
+.reg-btn{
+ width: 100%;
+  background-color: #232323;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  /* border: 2px solid red; */
+  padding: 15px;
+  /* margin-top: 10px;  */
+  /* margin-bottom: 100px; */
+}
+.reg-btn:hover{
+    background-color: #000;
+}
+
+
+/* ==================login section end======== */
+
+/* ===================theme start============= */
+.theme
+{
+    margin-top: 100px;
+
+}
+.theme-art1
+{
+    
+    font-size:40px;
+    text-align: center;
+    font-weight:200;
+    letter-spacing:3px;
+  
+
+}
+.theme .theme-art2 div img{
+    width:220px;
+    height: 220px;
+}
+.theme .theme-art2
+{
+    margin-top: 50px;
+    display:grid;
+    justify-content: space-evenly;
+    grid-template-columns:auto auto auto auto auto auto;
+
+}
+
+/* thmene section end===================== */
+
+
+
+.services .service-art1{
+        /* background-color:blue; */
+        /* border:2px solid red; */
+        /* margin-top: 180px; */
+        margin-top:30px;
+        display:flex;
+        justify-content: space-around;
+      
+       
+    }
+    .services .service-art1 div{
+        display: flex;
+        align-items: center;
+        /* margin: 50px; */
+        padding: 50px;
+         
+    }
+    .service-art1-para{
+        border-right: 1px solid grey;
+    
+         padding-right: 30px;
+         color:#222529;
+         font-size: 25px;
+         white-space: nowrap;
+   }

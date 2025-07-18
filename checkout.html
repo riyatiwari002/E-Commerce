@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-Out</title>
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="navbar">
+        <article>
+            <img src="./image/login-logo-black.png" alt="">
+        </article>
+        <article class="navbar-art2">
+            <ul>
+                <li> <a href="index.html#women">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </article>
+        <article class="navbar-art3">
+            <div>
+                <select name="" id="">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><a href="login.html"><i class="fa-regular fa-user"></i></a></div>
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+        </article>
+    </section>
+    <!-- navbar end here -->
+    <section class="links-to-process">
+        <article class="art1">
+            <div class="div1">
+                <a href="#">Shopping Cart&nbsp;&nbsp; ></a>
+            </div>
+            <div>
+                <a href="#">&nbsp;Checkout &nbsp;&nbsp;></a>
+            </div>
+            <div>
+                <a href="#"> &nbsp;Order Complete &nbsp;&nbsp;></a>
+            </div>
+        </article>
+    </section>
+    <!-- link to process end here -->
+    <article class="coupen">
+        <div>Hava a coupon?<b><a href="#">ENTER YOUR CODE</a></b></div>
+    </article>
+    <section class="content-checkout">
+        <article class="billing-form">
+            <h2 class="billing-title">Billing details</h2>
+
+            <div class="name">
+                <div class="form-group-name">
+                    <label for="first-name">First name <sup>*</sup></label>
+                    <input type="text" id="first-name" class="form-input" required>
+                </div>
+
+                <div class="form-group-name">
+                    <label for="last-name">Last name <sup>*</sup></label>
+                    <input type="text" id="last-name" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="company-name">Company name (optional)</label>
+                <input type="text" id="company-name" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country / Region <sup>*</sup></label>
+                <select id="country" class="form-input">
+                    <option selected>United States (US)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="street-address">Street address <sup>*</sup></label>
+                <input type="text" id="street-address" class="form-input" placeholder="House number and street name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="apartment" class="form-input"
+                    placeholder="Apartment, suite, unit, etc. (optional)">
+            </div>
+
+            <div class="form-group">
+                <label for="city">Town / City <sup>*</sup></label>
+                <input type="text" id="city" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State <sup>*</sup></label>
+                <input type="text" id="state" class="form-input" value="New York" required>
+            </div>
+
+            <div class="form-group">
+                <label for="zip">ZIP Code <sup>*</sup></label>
+                <input type="text" id="zip" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone <sup>*</sup></label>
+                <input type="text" id="phone" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address <sup>*</sup></label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+
+            <div class="check-box">
+                <input type="checkbox" id="ship-different">
+                <label for="ship-different">Ship to a different address?</label>
+            </div>
+
+            <div class="order-notes">
+                <label for="order">Order notes (optional)</label>
+                <div>
+                    <textarea id="order"
+                        placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                </div>
+            </div>
+        </article>
+        <article class="your-order">
+            <div class="order">YOUR ORDER</div>
+            <h4>PRODUCT</h4>
+            <article class="about-product">
+                <div>
+                     <p> white t-shirt</p>
+                    <img src="./images3/shop52-product-1-1-445x631.png" alt="">
+                </div>
+                <div class="qty-box">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+                <h3>$45.00</h3>
+            </article>
+            <div class="subtotal">
+                <div>Total</div>
+                <h3>$45.00</h3>
+            </div>
+                    <div class="range">
+                        <div>
+                            <div>
+                                <img src="./image/shop52-icon-2.png" alt="">
+                            </div>
+                            <div>
+                                Add $950.00 to cart and get free shipping!
+                            </div>
+                        </div>
+                        <progress value="20" max="100"></progress>
+                    </div>
+
+
+                    <div class="payment-methods">
+                        <div> <input type="radio"> &nbsp; Direct bank transfer</div>
+                        <div><input type="radio">&nbsp; &nbsp;Check payments</div>
+                        <div>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</div>
+                        <div><input type="radio"> &nbsp;&nbsp;Cash on delivery</div>
+                    </div>
+
+                    <div class="check-box">
+                       <input type="checkbox"> &nbsp; &nbsp;Would you like to be invited to review your order? Check here to receive a message from CusRev (an independent reviews service) with a review form.
+                    </div>
+
+                    <div class="palce-order">
+                           <button>PLACE ORDER</button>
+                    </div>
+        </article>
+    </section>
+</body>
+
+</html>

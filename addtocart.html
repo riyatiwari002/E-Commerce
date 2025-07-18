@@ -1,114 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addtocart.css">
     <link rel="stylesheet" href="login.css">
-     <link rel="icon" href="./images3/OIP.webp"/>
-    <title>Garments Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-   
 </head>
-<body>
-    
-    <section class="navbar">
-        <article class="navbar-art1">
-          <div class="logo">
-            <img src="./images3/shop52-footer-logo-128x31black.png" alt="">
-          </div>
-        </article>
 
+<body>
+    <section class="navbar">
+        <article>
+            <img src="./image/login-logo-black.png" alt="">
+        </article>
         <article class="navbar-art2">
             <ul>
-            <li><a href="index.html#women-section">WOMEN</a></li>
-            <li><a href="index.html#men-section">MEN</a></li>
-            <li><a href="index.html#kids-section">KIDS</a></li>
-            <li><a href="#accessories-section">ACCESSORIES</a>
-            </li>
-            <li><a href="">SHOES</a></li>
-            <li><a href="">MORE</a></li>
-            <li><a href="">SALE</a></li>
+                <li> <a href="index.html#women">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Sale</a></li>
             </ul>
-
         </article>
-
         <article class="navbar-art3">
             <div>
                 <select name="" id="">
-                    <option  class="opt" value="USD">USD</option>
-                    <option  class="opt" value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
                 </select>
-             </div>
-                 <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                 <div><i class="fa-regular fa-user"></i></div>
-                    <div><i class="fa-solid fa-bag-shopping"></i></div>
-           
+            </div>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><a href="login.html"><i class="fa-regular fa-user"></i></a></div>
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
         </article>
-          </section>
-
-
-        <!-- navbar end================== -->
-
-        <!-- ===============my account section start===== -->
-
-        <section class="my-account">
-            <article class="my-account-art1">My Account</article>
-        </section>
-
-        <section class="login">
-            <article class="login-art1">
-                <form action="">
-                    <h2>Login</h2>
-
-                    <div class="form-group">
-                    <label for="username">Username or email address<sup>*</sup> </label>
-                    <input type="text" id="username" name="name" required>
+    </section>
+    <!-- ================== navbar end ==================-->
+<section class="links-to-process">
+        <article class="art1">
+            <div class="div1">
+                <a href="#">Shopping Cart&nbsp;&nbsp; ></a>
+            </div>
+            <div>
+                <a href="#">&nbsp;Checkout &nbsp;&nbsp;></a>
+            </div>
+            <div>
+                <a href="#"> &nbsp;Order Complete &nbsp;&nbsp;></a>
+            </div>
+        </article>
+<!-- how much you pay per product and what offer you get -->
+ <div class="content">
+        <div class="left-content">
+            <article class="products-you-are-selected">
+                    <div class="range">
+                        <div>
+                            <div>
+                                <img src="./image/shop52-icon-2.png" alt="">
+                            </div>
+                            <div>
+                                Add $950.00 to cart and get free shipping!
+                            </div>
+                        </div>
+                        <progress value="20" max="100"></progress>
                     </div>
-                    
-                    <div class="form-group">
-                    <label for="password">Password<sup>*</sup></label>
-                    
-                        <input type="Password" id="password" name="pass" required>
-                    </div>
+            </article>
+ <!-- product which is added in cart -->
+            <article class="added-product">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>SUBTOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-info">
+                                    <img src="./images3/shop52-product-20-1-man.png" alt="">
+                                    <span>Casual T-Shirt</span>
+                                </td>
+                                <td>$50.00</td>
+                                <td>
+                                    <div class="qty-box">
+                                        <button>-</button>
+                                        <input type="text" value="1">
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td>$50.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </article>
+        </div>
+<!-- right content -->
+            <div class="cart-totals-box">
+                <h2>CART TOTALS</h2>
 
-                    
-                <div class="form-options">
-                     <div>
-                         <input type="checkbox" id="remember" name="remember">
-                         <label for="remember">Remember me</label>
-                     </div>
-                         <a href="#" class="fogot">Forgot Password?</a>
+                <div class="subtotal-line">
+                    <span>Subtotal</span>
+                    <span>$50.00</span>
                 </div>
-          
-                    <div class="form-group"><button type="submit" class="btn">LOGIN</button></div>
-                </form>
-            </article>
 
-        <article class="login-art1">
-                <form action="">
-                    <h2>Register</h2>
+                <form action="#">
+                    <p class="section-label">Shipping</p>
 
-                    <div class="form-group">
-                    <label for="username">Username or email address<sup>*</sup> </label>
-                    <input type="text" id="username" name="name" required>
+                    <label class="radio-label">
+                        <input type="radio" name="shipping"> Free shipping
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="shipping"> Flat rate
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="shipping"> Local pickup
+                    </label>
+
+                    <p class="shipping-to">Shipping to <strong>NY</strong></p>
+
+                    <select class="select-field">
+                        <option>United States (US)</option>
+                        <option>India</option>
+                        <option>Australia</option>
+                    </select>
+
+                    <select class="select-field">
+                        <option>New York</option>
+                        <option>Delhi</option>
+                        <option>London</option>
+                    </select>
+
+                    <input type="text" placeholder="City" class="input-text">
+                    <input type="text" placeholder="Postcode / ZIP" class="input-text">
+
+                    <button class="update-btn">UPDATE TOTALS</button>
+
+                    <div class="total-line">
+                        <span>Total</span>
+                        <span>$50.00</span>
                     </div>
-                    
-                    <div class="form-group">
-                    <label for="password">Password<sup>*</sup></label>
-                    
-                        <input type="Password" id="password" name="pass" required>
-                    </div>
-
-                    
-                    <div class="form-group"><button type="submit" class="reg-btn">Register</button></div>
+                     <!-- PROCEED TO CHECKOUT → -->
+                     <a href="checkout.html" class="checkout-btn">PROCEED TO CHECKOUT →</a>
                 </form>
-            </article>
-        </section>   
-        
-        
+            </div>
+</section>
 
-        <!-- =========================login section end========== -->
+<!-- ================================= footer section with gallery ============= -->
+ <!-- =========================login section end========== -->
 
         <section class="theme">
             <article class="theme-art1">
@@ -268,7 +311,6 @@
        </section>
        <!-- =================footer end===================== -->
 
-        
-    
-  </body>
-  </html>
+</body>
+
+</html>

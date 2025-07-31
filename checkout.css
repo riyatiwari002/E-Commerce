@@ -29,6 +29,7 @@ body,html{
     padding-bottom: 30px;
     font-size: 20px;
 }
+
 /* ================================================================================= */
 .content-checkout{
     display: flex;
@@ -86,6 +87,8 @@ body,html{
     color: gray;
     margin-bottom: 5px;
 }
+
+
 /* ==========================  right content */
 
 
@@ -221,3 +224,78 @@ body,html{
     width: 95%;
     border: none;
 }
+
+@media(max-width:1024px)
+{
+    
+.content-checkout .your-order{    
+    width: 400px;
+
+}
+    .content-checkout{
+     gap: 30px;
+    
+}
+   .content-checkout .your-order{
+    width: 500px;
+
+}
+
+
+.your-order .about-product div img{
+    padding-right: 0px;
+}
+.your-order .subtotal{
+    gap: 280px;
+}
+}
+
+
+@media(max-width:909px)
+{
+    .content-checkout{
+    flex-wrap: wrap;
+}
+.billing-form{
+   
+    width: 80%;
+}
+
+.content-checkout .your-order{
+   
+  
+    width: 600px;
+    margin-left: 100px;
+
+}
+}
+@media(max-width:559px)
+{
+    .content-checkout .your-order{
+   
+    margin-left: 30px;
+
+}
+}
+@media(max-width:483px)
+{
+
+    .content-checkout .your-order{
+   
+      width:400px;
+      /* margin-left: 15px; */
+
+}
+.about-product h3{
+    padding-right: 0px;
+    
+}
+.your-order .subtotal{
+    gap: 200px;
+}
+.your-order .about-product div img{
+    padding-left: 30px;
+    padding-right: 0px;
+}
+}
+
